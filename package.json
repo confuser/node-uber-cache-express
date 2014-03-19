@@ -1,0 +1,43 @@
+{
+  "name": "uber-cache-express",
+  "version": "0.0.1",
+  "description": "A connect style route caching middleware for express using uber-cache",
+  "main": "cache.js",
+  "dependencies": {
+    "uber-cache": "~1.1.0"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org"
+  },
+  "scripts": {
+    "lint": "./node_modules/.bin/jshint .",
+    "pretest": "npm run-script lint",
+    "test": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --recursive -R spec",
+    "posttest": "./node_modules/.bin/istanbul check-coverage && rm -rf coverage",
+    "prepublish": "npm test && npm prune"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:confuser/node-uber-cache-express.git"
+  },
+  "author": "James Mortemore",
+  "bugs": {
+    "url": "https://github.com/confuser/node-uber-cache-express/issues"
+  },
+  "homepage": "https://github.com/confuser/node-uber-cache-express",
+  "engines": {
+    "node": ">=0.8"
+  },
+  "devDependencies": {
+    "mocha": "~1.13.0",
+    "istanbul": "~0.1.44",
+    "async": "~0.2.9",
+    "should": "2",
+    "jshint": "~2.3.0",
+    "express": "3.4.6",
+    "supertest": "0.9.2"
+  },
+  "dependencies": {
+    "uber-cache": "~1.1.0"
+  }
+}

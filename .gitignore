@@ -1,0 +1,37 @@
+# Eclipse
+/.project
+/.settings
+/.buildpath
+
+# Sublime
+*.sublime-project
+*.sublime-workspace
+
+# Windows
+Thumbs.db
+
+# Vim
+.*.sw[a-z]
+*.un~i
+tags
+
+# OsX
+.DS_Store
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+
+# ZSH Cake plugin cache
+/.cake_task_cache
+
+# SASS
+.sass-cache
+
+# Node modules
+node_modules
+
+# Project specific
+preview/*
+*.css
+huds.json
