@@ -9,6 +9,15 @@
   "publishConfig": {
     "registry": "http://registry.npmjs.org"
   },
+  "tags": [
+    "cache",
+    "memory",
+    "ttl",
+    "lru",
+    "connect",
+    "express",
+    "middleware"
+  ],
   "scripts": {
     "lint": "./node_modules/.bin/jshint .",
     "pretest": "npm run-script lint",
